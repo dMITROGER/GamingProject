@@ -8,7 +8,7 @@ public class Projectile : MonoBehaviour {
     public float lifeTime;
     //public int damage;
 
-    //public GameObject explosion;
+    public GameObject explosion;
 
     //public GameObject soundObject;
 
@@ -18,10 +18,10 @@ public class Projectile : MonoBehaviour {
 
     private void Start()
     {
-        //Invoke("DestroyProjectile", lifeTime);
+        Invoke("DestroyProjectile", lifeTime);
         //Instantiate(soundObject, transform.position, transform.rotation);
         //Instantiate(explosion, transform.position, Quaternion.identity);
-        Destroy(gameObject, lifeTime);
+        //Destroy(gameObject, lifeTime);
     }
 
     private void Update()
@@ -38,10 +38,11 @@ public class Projectile : MonoBehaviour {
         transform.Translate(Vector2.up * speed * Time.deltaTime);
     }
 
-    //void DestroyProjectile() {
-    //    Instantiate(explosion, transform.position, Quaternion.identity);
-    //    Destroy(gameObject);
-    //}
+    void DestroyProjectile()
+    {
+        Instantiate(explosion, transform.position, Quaternion.identity);
+        Destroy(gameObject);
+    }
 
     //private void OnTriggerEnter2D(Collider2D other)
     //{
