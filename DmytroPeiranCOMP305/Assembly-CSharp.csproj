@@ -56,10 +56,13 @@
      <Compile Include="Assets\Scripts\Boss.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
+     <Compile Include="Assets\Scripts\EnemyBullet.cs" />
      <Compile Include="Assets\Scripts\MeleeEnemy.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\Projectile.cs" />
+     <Compile Include="Assets\Scripts\RangedEnemy.cs" />
      <Compile Include="Assets\Scripts\SceneTransition.cs" />
+     <Compile Include="Assets\Scripts\WaveSpawner.cs" />
      <Compile Include="Assets\Scripts\Weapon.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/GIT/GamingProject/DmytroPeiranCOMP305/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
