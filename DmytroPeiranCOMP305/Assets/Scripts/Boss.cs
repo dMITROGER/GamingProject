@@ -17,6 +17,7 @@ public class Boss : MonoBehaviour {
     public GameObject blood;
     public GameObject effect;
 
+
     private Slider healthBar;
 
     private SceneTransition sceneTransitions;

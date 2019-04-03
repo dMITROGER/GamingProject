@@ -95,7 +95,7 @@ TextureImporter:
         width: 858
         height: 696
       alignment: 9
-      pivot: {x: 0.9310684, y: 0.34057897}
+      pivot: {x: 0.9310684, y: 0.3320074}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -110,12 +110,12 @@ TextureImporter:
       name: RangedEnemy_1
       rect:
         serializedVersion: 2
-        x: 2249
-        y: 2451
+        x: 2225
+        y: 2427
         width: 907
         height: 621
       alignment: 9
-      pivot: {x: 0.07183064, y: 0.13272443}
+      pivot: {x: 0.104717754, y: 0.18075724}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -132,10 +132,10 @@ TextureImporter:
         serializedVersion: 2
         x: 1105
         y: 816
-        width: 1256
-        height: 1156
+        width: 1250
+        height: 1157
       alignment: 9
-      pivot: {x: 0.495092, y: 0.03607938}
+      pivot: {x: 0.5141823, y: 0.041235395}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RangedEnemy : Enemy {
+public class RangedEnemy : Enemy
+{
 
     public float stopDistance;
     public GameObject enemyBullet;
@@ -26,7 +27,7 @@ public class RangedEnemy : Enemy {
             if (Vector2.Distance(transform.position, player.position) > stopDistance)
             {
                 transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
-                
+
             }
 
 
@@ -41,7 +42,8 @@ public class RangedEnemy : Enemy {
     }
 
 
-    public void RangedAttack () {
+    public void RangedAttack()
+    {
 
         if (player != null)
         {
@@ -52,11 +54,10 @@ public class RangedEnemy : Enemy {
             shotPoint.rotation = rotation;
 
             Instantiate(enemyBullet, shotPoint.position, shotPoint.rotation);
-            
+
 
         }
 
     }
-
-
+    
 }

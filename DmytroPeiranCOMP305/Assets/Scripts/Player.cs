@@ -103,6 +103,7 @@ public class Player : MonoBehaviour
 
     }
 
+
     public void Heal(int healAmount) {
         if (health + healAmount > 5)
         {

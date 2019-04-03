@@ -10,6 +10,8 @@ public class Weapon : MonoBehaviour {
 
     private float shotTime;
 
+
+
     //Animator cameraAnim;
 
     private void Start()

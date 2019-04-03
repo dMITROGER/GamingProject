@@ -19,6 +19,7 @@ public class WaveSpawner : MonoBehaviour {
     private int currentWaveIndex;
     private Transform player;
 
+
     private bool spawningFinished;
 
     public GameObject boss;

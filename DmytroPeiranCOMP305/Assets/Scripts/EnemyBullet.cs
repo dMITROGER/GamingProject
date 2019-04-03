@@ -10,6 +10,7 @@ public class EnemyBullet : MonoBehaviour {
     public float speed;
     public int damage;
 
+
     public GameObject effect;
 
     private void Start()
