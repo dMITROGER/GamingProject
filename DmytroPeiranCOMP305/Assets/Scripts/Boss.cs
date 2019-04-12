@@ -27,15 +27,15 @@ public class Boss : MonoBehaviour {
         halfHealth = health / 2;
         anim = GetComponent<Animator>();
         healthBar = FindObjectOfType<Slider>();
-        healthBar.maxValue = health;
-        healthBar.value = health;
+       // healthBar.maxValue = health;
+       // healthBar.value = health;
         sceneTransitions = FindObjectOfType<SceneTransition>();
     }
 
     public void TakeDamage(int amount)
     {
         health -= amount;
-        healthBar.value = health;
+        //healthBar.value = health;
         if (health <= 0)
         {
             Instantiate(effect, transform.position, Quaternion.identity);
