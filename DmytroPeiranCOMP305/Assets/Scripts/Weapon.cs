@@ -10,13 +10,11 @@ public class Weapon : MonoBehaviour {
 
     private float shotTime;
 
-
-
-    //Animator cameraAnim;
+    Animator cameraAnim;
 
     private void Start()
     {
-//cameraAnim = Camera.main.GetComponent<Animator>();
+        cameraAnim = Camera.main.GetComponent<Animator>();
     }
 
     private void Update()
@@ -32,7 +30,7 @@ public class Weapon : MonoBehaviour {
             if (Time.time >= shotTime)
             {
                 Instantiate(projectile, shotPoint.position, transform.rotation);
-              //  cameraAnim.SetTrigger("shake");
+                cameraAnim.SetTrigger("shake");
                 shotTime = Time.time + timeBetweenShots;
             }
         }

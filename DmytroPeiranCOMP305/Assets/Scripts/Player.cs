@@ -71,14 +71,14 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
-       //Instantiate(hurtSound, transform.position, Quaternion.identity);
+       Instantiate(hurtSound, transform.position, Quaternion.identity);
         health -= amount;
         UpdateHealthUI(health);
-        //hurtAnim.SetTrigger("hurt");
+        hurtAnim.SetTrigger("hurt");
         if (health <= 0)
         {
             Destroy(this.gameObject);
-            //sceneTransitions.LoadScene("Lose");
+            sceneTransitions.LoadScene("Lose");
         }
     }
 
@@ -102,7 +102,6 @@ public class Player : MonoBehaviour
         }
 
     }
-
 
     public void Heal(int healAmount) {
         if (health + healAmount > 5)

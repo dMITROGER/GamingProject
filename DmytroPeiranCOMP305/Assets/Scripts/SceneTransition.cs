@@ -20,7 +20,6 @@ public class SceneTransition : MonoBehaviour {
         transitionAnim.SetTrigger("end");
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene(sceneName);
-
     }
 
 }
